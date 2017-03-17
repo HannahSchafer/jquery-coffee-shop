@@ -52,19 +52,13 @@
 
     myImage.attr("src", "static/coffee_beans.jpg");
 
-    myImage.on("click", makeCoffee);
-
-    // function makeCoffee() {
-    //      // myImage.src = "static/coffee_machine.jpg";
-    //      setTimeout(function() { myImage.setAttribute("src", "static/coffee_mug.jpg"); }, 1500);
-    //      setTimeout(function() { myImage.setAttribute("src", "static/coffee_beans.jpg"); }, 4000);
-    // }
-
     function makeCoffee() {
     myImage.attr("src", "static/coffee_machine.jpg");
     setTimeout(function() { myImage.attr("src", "static/coffee_mug.jpg"); }, 1500);
     setTimeout(function() { myImage.attr("src", "static/coffee_beans.jpg"); }, 4000);
     }
+    
+    myImage.on("click", makeCoffee);
 
 
 </script>
